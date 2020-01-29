@@ -1,95 +1,129 @@
 const game = document.getElementById('gameArea')
 const contexto = game.getContext('2d')
 var direction = ''
+var lastDirection = ''
 var speed = 16
 var score = 0
-var lastPoint = 0
+var lastPoint = undefined
 var wallCollision = 113
 
 
-const fixSize = 16
-const gameSize = {
-    x: 800,
-    y: 800
-}
+const playerSize = 16
+var foodSize = 16
+const gameSize = {}
 
 var foodTimeout
+var moveTime
 
 var jogo = {
     jogador: {
-        body: [{
-            x: Math.floor(Math.random() * (gameSize.x - fixSize)),
-            y: Math.floor(Math.random() * (gameSize.y - fixSize))
-        }]
+        body: []
     },
-    food: {}
+    food: {},
+    type: 'normal'
 }
 
 function updateFood() {
-    console.log("TESTE")
-    jogo.food.x = Math.floor(Math.random() * (gameSize.x - fixSize))
-    jogo.food.y = Math.floor(Math.random() * (gameSize.y - fixSize))
-    // foodTimeout = setTimeout(updateFood, (Math.floor(Math.random() * (10 - 4)) + 4) * 1000)
-    // console.log(jogo.food)
+
+    jogo.type = Math.random()
+
+    clearTimeout(foodTimeout)
+    if (jogo.type < 0.8) {
+        foodSize = 16
+        foodTimeout = setTimeout(updateFood, (Math.floor(Math.random() * (10 - 4)) + 4) * 1000)
+        jogo.food.x = Math.floor(Math.random() * (gameSize.x - (foodSize * 3)))
+        jogo.food.y = Math.floor(Math.random() * (gameSize.y - (foodSize * 3)))
+    } else {
+        foodSize = 28
+        foodTimeout = setTimeout(updateFood, (Math.floor(Math.random() * (5 - 1)) + 1) * 1000)
+        jogo.food.x = Math.floor(Math.random() * (gameSize.x - (foodSize * 3)))
+        jogo.food.y = Math.floor(Math.random() * (gameSize.y - (foodSize * 3)))
+    }
+
 }
 
-document.addEventListener('keydown', keyHandler)
-updateFood()
 
+
+startGame()
 
 
 const moveSnake = {
     ArrowLeft() {
-        if (jogo.jogador.body[0].x - speed >= 0) {
-            jogo.jogador.body[0].x -= speed
-            return
+        if (lastDirection == "ArrowRight") {
+            direction = "ArrowRight"
+            return true
         }
-        if (wColision()) {
+        jogo.jogador.body[0].x -= speed
+        lastDirection = "ArrowLeft"
+
+        if (wColision() && (jogo.jogador.body[0].x - speed <= 0)) {
             game.width -= wallCollision
             gameSize.x -= wallCollision
             direction = "ArrowRight"
+            lastDirection = "ArrowRight"
+            jogo.jogador.body = jogo.jogador.body.reverse()
         }
+
     },
     ArrowDown() {
-        if (jogo.jogador.body[0].y + fixSize + speed <= game.height) {
-            jogo.jogador.body[0].y += speed
-            return
+        if (lastDirection == "ArrowUp") {
+            direction = "ArrowUp"
+            return true
         }
-        if (wColision()) {
+
+        jogo.jogador.body[0].y += speed
+        lastDirection = "ArrowDown"
+
+        if (wColision() && (jogo.jogador.body[0].y + playerSize + speed >= game.height)) {
             game.height -= wallCollision
             gameSize.y -= wallCollision
-            jogo.jogador.body[0].y -= wallCollision
+            for (let peace of jogo.jogador.body) {
+                peace.y -= wallCollision
+            }
             direction = "ArrowUp"
+            lastDirection = "ArrowUp"
+            jogo.jogador.body = jogo.jogador.body.reverse()
         }
     },
     ArrowRight() {
-        if (jogo.jogador.body[0].x + fixSize + speed <= game.width) {
-            jogo.jogador.body[0].x += speed
-            return
+        if (lastDirection == "ArrowLeft") {
+            direction = "ArrowLeft"
+            return true
         }
-        if (wColision()) {
+
+        jogo.jogador.body[0].x += speed
+        lastDirection = "ArrowRight"
+
+        if (wColision() && (jogo.jogador.body[0].x + playerSize + speed >= game.width)) {
             game.width -= wallCollision
             gameSize.x -= wallCollision
-            jogo.jogador.body[0].x -= wallCollision
+            for (let peace of jogo.jogador.body) {
+                peace.x -= wallCollision
+            }
             direction = "ArrowLeft"
+            lastDirection = "ArrowLeft"
+            jogo.jogador.body = jogo.jogador.body.reverse()
         }
+
     },
     ArrowUp() {
-        if (jogo.jogador.body[0].y - speed >= 0) {
-            jogo.jogador.body[0].y -= speed
-            return
+        if (lastDirection == "ArrowDown") {
+            direction = "ArrowDown"
+            return true
         }
-        if (wColision()) {
+        jogo.jogador.body[0].y -= speed
+        lastDirection = "ArrowUp"
+        if (wColision() && (jogo.jogador.body[0].y - speed <= 0)) {
             game.height -= wallCollision
             gameSize.y -= wallCollision
             direction = "ArrowDown"
+            lastDirection = "ArrowDown"
+            jogo.jogador.body = jogo.jogador.body.reverse()
         }
     }
 }
 
 
-renderGame()
-setInterval(autoMove, 500)
 
 function autoMove() {
     for (let i = jogo.jogador.body.length - 1; i > 0; i--) {
@@ -98,10 +132,11 @@ function autoMove() {
     }
 
     if (moveSnake[direction]) {
-        moveSnake[direction]()
+        if (!moveSnake[direction]()) {
+            checkColision()
+        }
     }
 
-    checkColision()
 
 }
 
@@ -109,30 +144,46 @@ function autoMove() {
 function renderGame() {
 
     contexto.clearRect(0, 0, 800, 800)
-    contexto.fillStyle = 'black'
-
-
-    contexto.fillRect(jogo.food.x, jogo.food.y, fixSize, fixSize)
+    if (jogo.type < 0.8) {
+        contexto.fillStyle = 'black'
+        contexto.fillRect(jogo.food.x, jogo.food.y, foodSize, foodSize)
+    } else {
+        contexto.fillStyle = "#" + ((1 << 24) * Math.random() | 0).toString(16)
+        contexto.fillRect(jogo.food.x, jogo.food.y, foodSize, foodSize)
+    }
 
     for (index in jogo.jogador.body) {
         if (index == 0) {
-            contexto.fillStyle = 'red'
+            contexto.fillStyle = '#2a7623'
         } else {
-            contexto.fillStyle = '#FFCCCB'
+            contexto.fillStyle = '#9dd7e2'
         }
 
-        contexto.fillRect(jogo.jogador.body[index].x, jogo.jogador.body[index].y, fixSize, fixSize)
+        contexto.fillRect(jogo.jogador.body[index].x, jogo.jogador.body[index].y, playerSize, playerSize)
     }
 
-
+    checkScore()
     document.getElementById('point').innerHTML = 'Score: ' + score
     requestAnimationFrame(renderGame)
 
 }
 
+function checkScore() {
+    if (lastPoint) {
+        if (score > lastPoint) {
+            document.getElementById('point').style.color = "#" + ((1 << 24) * Math.random() | 0).toString(16)
+            document.getElementById('lastPoint').style.textDecoration = "line-through"
+            lastPoint = undefined
+        }
+    }
+}
+
+
 function keyHandler(event) {
-    direction = event.key
-    autoMove(direction)
+    if (moveSnake[event.key]) {
+        direction = event.key
+        autoMove(direction)
+    }
 
 }
 
@@ -149,10 +200,16 @@ function checkColision() {
     let body = jogo.jogador.body
     let food = jogo.food
 
-    if (body[0].x + fixSize >= food.x && body[0].x <= food.x + fixSize && body[0].y + fixSize >= food.y && body[0].y <= food.y + fixSize) {
-        score++
-        clearTimeout(foodTimeout)
-        body.push({ x: body[body.length - 1].x, y: body[body.length - 1].y })
+    if (body[0].x + playerSize >= food.x && body[0].x <= food.x + foodSize && body[0].y + playerSize >= food.y && body[0].y <= food.y + foodSize) {
+        if (jogo.type < 0.8) {
+            score++
+            body.push({ x: body[body.length - 1].x + 1, y: body[body.length - 1].y + 1 })
+        } else {
+            score += 9
+            for (let i = 0; i < 2; i++) {
+                body.push({ x: body[body.length - 1].x + 1, y: body[body.length - 1].y + 1 })
+            }
+        }
         updateFood()
     }
 
@@ -162,7 +219,7 @@ function checkColision() {
 
 
     for (i in body) {
-        if (i > 1) {
+        if (i >= 1) {
             if (body[0].x == body[i].x && body[0].y == body[i].y) {
                 finish()
             }
@@ -171,9 +228,37 @@ function checkColision() {
 
 }
 
-
 function finish() {
     document.removeEventListener('keydown', keyHandler)
+    document.getElementById('playAgain').style.display = 'inline-block'
+    contexto.fillStyle = "red"
+    clearTimeout(foodTimeout)
+    clearInterval(moveTime)
     direction = ''
+    lastPoint = score
 }
 
+function startGame() {
+    document.getElementById('playAgain').style.display = 'none'
+    document.getElementById('point').style.color = 'black'
+    document.getElementById('lastPoint').style.textDecoration = "none"
+    if (lastPoint) {
+        document.getElementById('lastPoint').innerHTML = "Last: " + lastPoint
+    }
+    score = 0
+    lastDirection = ''
+    gameSize.x = 800
+    gameSize.y = 800
+    game.width = 800
+    game.height = 800
+    jogo.jogador.body = []
+    jogo.jogador.body.push({
+        x: Math.floor(Math.random() * (gameSize.x - playerSize)),
+        y: Math.floor(Math.random() * (gameSize.y - playerSize))
+    })
+    document.addEventListener('keydown', keyHandler)
+    requestAnimationFrame(renderGame)
+    updateFood()
+    moveTime = setInterval(autoMove, 30)
+
+}

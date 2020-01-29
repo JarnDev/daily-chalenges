@@ -14,9 +14,16 @@
 
 <body>
 
-    <p id='point'></p>
-
-    <canvas id="gameArea" width="800px" height="800px"></canvas>
+    <div class="gameDiv">
+        <div>
+            <div id='point'></div>
+            <div id='lastPoint'></div>
+            <canvas id="gameArea" width="800px" height="800px"></canvas>
+        </div>
+    </div>
+    <div class="gameDiv">
+        <button id="playAgain" class='button' onclick="startGame()"><span>Play Again </span></button>
+    </div>
 
     <script src="js/main.js"></script>
 
