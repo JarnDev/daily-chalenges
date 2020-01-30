@@ -10,7 +10,6 @@ document.getElementById('addSubBut').addEventListener('click', function (event) 
         description: form['description'].value
     }
 
-    // alert(JSON.stringify(taskList))
     unique_id++
     addItems()
     form.reset()
@@ -32,10 +31,10 @@ document.getElementById('editSubBut').addEventListener('click', function (event)
 
     var row = document.getElementById(editButtonId)
 
-    row.cells[1].innerHTML = taskList[editButtonId].name
-    row.cells[2].innerHTML = taskList[editButtonId].priority
-    row.cells[3].innerHTML = taskList[editButtonId].deadline
-    row.cells[4].innerHTML = taskList[editButtonId].description
+    row.cells[0].innerHTML = taskList[editButtonId].name
+    row.cells[1].innerHTML = taskList[editButtonId].priority
+    row.cells[2].innerHTML = taskList[editButtonId].deadline
+    row.cells[3].innerHTML = taskList[editButtonId].description
 
     closeEditForm()
 
@@ -52,12 +51,10 @@ function addItems() {
             var table = document.createElement("TABLE")
             table.setAttribute("id", 'taskTable')
             document.getElementById('tableDiv').appendChild(table)
-            var tableHead = document.createElement('TH');
-            tableHead.innerHTML = 'TASK'
-            document.getElementById("taskTable").appendChild(tableHead);
             for (let task of Object.values(taskList)) {
                 Object.keys(task).forEach(header => {
                     var tableHead = document.createElement('TH');
+                    // tableHead.style.textAlign = 'center'
                     tableHead.innerHTML = header.toUpperCase()
                     document.getElementById("taskTable").appendChild(tableHead);
                 })
@@ -72,20 +69,19 @@ function addItems() {
 
         for (let i of Object.keys(taskList)) {
             if (!document.getElementById(i)) {
-                console.log(i)
                 var tableRow = document.createElement("TR");
                 tableRow.setAttribute("id", i);
                 document.getElementById("taskTable").appendChild(tableRow);
 
-                var tableData = document.createElement("TD");
-                var data = document.createTextNode(i);
-                tableData.appendChild(data)
-                document.getElementById(i).appendChild(tableData);
-
-                Object.values(taskList[i]).forEach(values => {
+                Object.values(taskList[i]).forEach((values,index) => {
+                
                     var tableData = document.createElement("TD");
+                    tableData.style.textAlign = 'center'
                     var data = document.createTextNode(values);
                     tableData.appendChild(data)
+                    // tableData.style.wordBreak = 'break-all'  
+                    // tableData.style['overflow-y'] = 'auto'
+                    // tableData.style['height'] = '50px'
                     document.getElementById(i).appendChild(tableData);
 
                 })
@@ -96,6 +92,7 @@ function addItems() {
                 edit.setAttribute('data', i)
                 edit.className = 'option-btn-edit'
                 edit.onclick = function () { editButton(this) }
+                edit.title = 'Edit this Task!'
                 tableData.appendChild(edit)
                 document.getElementById(i).appendChild(tableData);
 
@@ -105,6 +102,7 @@ function addItems() {
                 remove.setAttribute('data', i)
                 remove.className = 'option-btn-remove'
                 remove.onclick = function () { removeButton(this) }
+                remove.title = 'Remove this Task!'
                 tableData.appendChild(remove)
                 document.getElementById(i).appendChild(tableData);
 
@@ -142,8 +140,6 @@ function removeButton(row) {
     delete taskList[reference]
     var table = document.getElementById("taskTable")
     table.deleteRow(row.parentNode.parentNode.rowIndex)
-
-    console.log(taskList)
 
 }
 
