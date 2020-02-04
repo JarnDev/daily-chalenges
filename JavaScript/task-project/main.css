@@ -1,0 +1,140 @@
+.body{
+    background-color: rgba(0,0,0,0.4);
+}
+
+.container{
+    /* background-color: aqua; */
+    width: 50vw;
+    position: relative;
+    left: 25%;
+}
+
+.addButtonContainer{
+    /* background-color: aqua; */
+    width: 50vw;
+    position: relative;
+    left: 20%;
+}
+
+
+.button-round{
+    background-color: #4CAF50;
+    color: white;
+    /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50%;
+}
+
+.button-round:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+}
+
+
+.button{
+    background-color: #4CAF50;
+    color: white;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+}
+
+
+
+.form-input{
+    margin: 5px;
+    display: grid;
+}
+
+.form-container{
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 25%;
+    top: 10%;
+    width: 21vw;
+    -webkit-box-shadow: 0px 4px 17px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 4px 17px 0px rgba(0, 0, 0, 1);
+    box-shadow: 0px 4px 17px 0px rgba(0, 0, 0, 1);
+    overflow: hidden;
+    background-color: rgba(255,255,255,0.9); /* Black w/ opacity */
+    padding: 1px 20px 20px 20px;
+    border-radius: 5%;
+
+
+}
+
+.des-area{
+    overflow: hidden;
+    resize:vertical;
+    height: 100px;
+}
+
+.float-right{
+    float: right;
+}
+
+.cancel-x{
+    position: relative;
+    top: 10px;
+    left: 20vw;
+    color: crimson;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;   
+}
+.cancel-x:hover{
+    cursor: pointer;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#addFormDiv ,#editFormDiv{
+    display: none;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+th, td {
+padding: 8px;
+text-align: left;
+border-bottom: 1px solid #ddd;
+}
+
+tr:hover {background-color:#f5f5f5;}
+
+
+
+.option-btn-edit{
+    background-color: #4CAF50;
+    color: white;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 8px;
+    border: none;
+    margin-right:5px ;
+}
+
+.option-btn-remove{
+    background-color: rgb(165, 14, 59);
+    color: white;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 10px;
+    border: none;
+    margin-left: 5px;
+}
