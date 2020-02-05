@@ -37,35 +37,33 @@ def normalize_rules(rules):
     return n_rules
 
 def measure_rule(rules, table):
-    # print(rules[0][0])
-    # for rule in rules:
+    X_attribute = table
+    X_Y_attribute = table
     for item in rules:
         if item == rules[-1]:
-            print('OK')
+            X_Y_attribute = X_attribute[(X_attribute[item[0]] == item[1])]
+        else:
+            X_attribute = X_attribute[(X_attribute[item[0]] == item[1])]
+    
+    X_attribute_support = X_attribute.shape[0]/table.shape[0]
+    X_Y_attribute_support = X_Y_attribute.shape[0]/table.shape[0]
 
-
-    # print(table[(table[rules[0][0]] == rules[0][1]) & (table['sex'] == 'Male')].shape)
-    # break
-
+    rule_confidence = X_Y_attribute_support/X_attribute_support
+    
+    return rule_confidence
+     
 
 def arrangingRules(rules):
     # Write your code here
     table = normalize_csv('Census/census.csv')
     rules_norm = normalize_rules(rules)
     for rule in rules_norm:
-        measure_rule(rules_norm[rule],table)
-        break
-        # print(rules_norm[rule])
-    # tabe_t = re.sub('[\{\}]', '', rules[0]).split('=>')
-    # print(table.head())
-    # for rule in rules:
-    #     print(rule.split('=>'))
-    #     rules_2 = rule.split('=>')
-    #     print(eval(rules[0]))
-            
-    #     break
+        rules_norm[rule] = measure_rule(rules_norm[rule], table)
+
+    sorted_rules = sorted(rules_norm.items(), key=lambda kv: (kv[1], kv[0]), reverse=True)
+    return_rules = [rule[0] for rule in sorted_rules]
+    return 
     
-   
   
 if __name__ == '__main__':
     
