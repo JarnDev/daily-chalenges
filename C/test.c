@@ -10,7 +10,6 @@
 #include <string.h>
 
 int min_size, target_size, half1_len, half2_len, count = 0;
-// char s1[50], s2[50], t2[50];
 
 int findSmallestDivisor(char *s, char *t)
 {
