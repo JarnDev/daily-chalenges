@@ -22,9 +22,9 @@ Repository created to showcase/track all challenges done on several online plata
     <tr>
         <td>03/14/2021</td>
         <td><a href="https://www.urionlinejudge.com.br/judge/pt/problems/view/1000" target="_blank" rel="noreferrer noopener">✔️</a></td>
+        <td><a href="https://www.hackerrank.com/challenges/capitalize/problem" target="_blank" rel="noreferrer noopener">✔️</a></td>
+        <td><a href="https://www.codewars.com/kata/54521e9ec8e60bc4de000d6c/train/python" target="_blank" rel="noreferrer noopener">✔️</a></td>
         <td>-</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
+        <td><a href="https://leetcode.com/problems/reverse-integer/" target="_blank" rel="noreferrer noopener">✔️</a></td>
     </tr>
 </table>
