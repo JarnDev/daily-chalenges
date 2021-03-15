@@ -3,12 +3,20 @@ Repository created to showcase/track all challenges done on several online plata
 
 - Access the website clicking the respective logo at the header
 - Access the challenge clicking on the checkmark, if link is available
+- The Icon at the checkmark's right, represent the language used to solve the problem.
 
 <br>
 
 ---
 
 <br>
+<div style='display:flex; align-items: center; justifi-content: center;'>
+    <img src="./assets/python-logo.png" width=10> Python &nbsp;|&nbsp; 
+    <img src="./assets/javascript-logo.png" width=15> JavaScript &nbsp;|&nbsp;
+    <img src="./assets/C-logo.png" width=20> C &nbsp;|&nbsp;
+    <img src="./assets/c++-logo.png" width=15> C++ &nbsp;|&nbsp;
+    <img src="./assets/sql-logo.png" width=25> SQL
+</div>
 
 <table>
     <tr>
@@ -22,14 +30,30 @@ Repository created to showcase/track all challenges done on several online plata
     </tr>
     <tr>
         <td>03/14/2021</td>
-        <td><a href="https://www.urionlinejudge.com.br/judge/pt/problems/view/1000" target="_blank" rel="noreferrer noopener">✔️</a></td>
-        <td><a href="https://www.hackerrank.com/challenges/capitalize/problem" target="_blank" rel="noreferrer noopener">✔️</a></td>
-        <td><a href="https://www.codewars.com/kata/54521e9ec8e60bc4de000d6c/train/python" target="_blank" rel="noreferrer noopener">✔️</a></td>
+        <td>
+            <a href="https://www.urionlinejudge.com.br/judge/pt/problems/view/1000" target="_blank" rel="noreferrer noopener">✔️</a>
+            <img src="./assets/python-logo.png" width=10>
+        </td>
+        <td>
+            <a href="https://www.hackerrank.com/challenges/capitalize/problem" target="_blank" rel="noreferrer noopener">✔️</a>
+            <img src="./assets/python-logo.png" width=10>
+        </td>
+        <td>
+            <a href="https://www.codewars.com/kata/54521e9ec8e60bc4de000d6c/train/python" target="_blank" rel="noreferrer noopener">✔️</a>
+            <img src="./assets/python-logo.png" width=10>
+        </td>
         <td>-</td>
-        <td><a href="https://leetcode.com/problems/reverse-integer/" target="_blank" rel="noreferrer noopener">✔️</a></td>
+        <td>
+            <a href="https://leetcode.com/problems/reverse-integer/" target="_blank" rel="noreferrer noopener">✔️</a>
+            <img src="./assets/javascript-logo.png" width=15 >
+        </td>
         <td>
             <a href="https://www.codingame.com/training/easy/onboarding" target="_blank" rel="noreferrer noopener">✔️</a>
+            <img src="./assets/javascript-logo.png" width=15>
             <a href="https://www.codingame.com/training/easy/the-descent" target="_blank" rel="noreferrer noopener">✔️</a>
+            <img src="./assets/javascript-logo.png" width=15>
+        </td>
+    </tr>
         </td>
     </tr>
 </table>
