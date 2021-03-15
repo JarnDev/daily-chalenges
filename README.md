@@ -54,6 +54,28 @@ Repository created to showcase/track all challenges done on several online plata
             <img src="./assets/javascript-logo.png" width=15>
         </td>
     </tr>
+    <tr>
+        <td>03/15/2021</td>
+        <td>
+            <a href="https://www.urionlinejudge.com.br/judge/pt/problems/view/1000" target="_blank" rel="noreferrer noopener">✔️</a>
+            <img src="./assets/python-logo.png" width=10>
+        </td>
+        <td>
+            <a href="https://www.hackerrank.com/challenges/print-the-elements-of-a-linked-list/problem" target="_blank" rel="noreferrer noopener">✔️</a>
+            <img src="./assets/C-logo.png" width=20>
+        </td>
+        <td>
+            <a href="https://www.codewars.com/kata/552c028c030765286c00007d/train/python" target="_blank" rel="noreferrer noopener">✔️</a>
+            <img src="./assets/python-logo.png" width=10>
+        </td>
+        <td>-</td>
+        <td>
+            <a href="https://leetcode.com/problems/big-countries/" target="_blank" rel="noreferrer noopener">✔️</a>
+           <img src="./assets/sql-logo.png" width=25>
+        </td>
+        <td>
+            <a href="https://www.codingame.com/ide/puzzle/power-of-thor-episode-1" target="_blank" rel="noreferrer noopener">✔️</a>
+           <img src="./assets/javascript-logo.png" width=15>
         </td>
     </tr>
 </table>
