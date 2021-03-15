@@ -10,27 +10,6 @@ Repository created to showcase/track all challenges done on several online plata
 
 <br>
 
-<style>
-table{
-    border-collapse:separate; 
-    border-spacing: 0 1em;
-    color:#000;
-    background: rgba(255,255,255,0.2);
-    padding: 10px;
-}
-table td,th{
-    text-align: center; 
-    vertical-align: middle;
-}
-table tr:nth-child(n+2){
-    background: #fff;
-    border-radius: 4px;
-    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
-
-}
-
-</style>
-
 <table>
     <tr>
         <th>Date</th>
