@@ -28,54 +28,65 @@ Repository created to showcase/track all challenges done on several online plata
         <th><a href="https://leetcode.com/" target="_blank" rel="noreferrer noopener"><img src="https://miro.medium.com/max/2720/1*kBWo_GWrG58h28kDHwnBfg.png" width="100"></a></th>
         <th><a href="https://www.codingame.com/" target="_blank" rel="noreferrer noopener"><img src="https://i.pinimg.com/originals/36/8e/71/368e71f24ccbbeb6ccaac9d252a3eef1.png" width="100"></a></th>
     </tr>
-    <tr>
+    <tr style="text-align: center; vertical-align: middle;">
         <td>03/14/2021</td>
         <td>
-            <a href="https://www.urionlinejudge.com.br/judge/pt/problems/view/1000" target="_blank" rel="noreferrer noopener">✔️</a>
-            <img src="./assets/python-logo.png" width=10>
+            <a href="https://www.urionlinejudge.com.br/judge/pt/problems/view/1000" target="_blank" rel="noreferrer noopener">
+                <img src="./assets/python-logo.png" width=12>
+            </a>
         </td>
         <td>
-            <a href="https://www.hackerrank.com/challenges/capitalize/problem" target="_blank" rel="noreferrer noopener">✔️</a>
-            <img src="./assets/python-logo.png" width=10>
+            <a href="https://www.hackerrank.com/challenges/capitalize/problem" target="_blank" rel="noreferrer noopener">
+                <img src="./assets/python-logo.png" width=12>
+            </a>
         </td>
         <td>
-            <a href="https://www.codewars.com/kata/54521e9ec8e60bc4de000d6c/train/python" target="_blank" rel="noreferrer noopener">✔️</a>
-            <img src="./assets/python-logo.png" width=10>
+            <a href="https://www.codewars.com/kata/54521e9ec8e60bc4de000d6c/train/python" target="_blank" rel="noreferrer noopener">
+                <img src="./assets/python-logo.png" width=12>
+            </a>
         </td>
         <td>-</td>
         <td>
-            <a href="https://leetcode.com/problems/reverse-integer/" target="_blank" rel="noreferrer noopener">✔️</a>
-            <img src="./assets/javascript-logo.png" width=15 >
+            <a href="https://leetcode.com/problems/reverse-integer/" target="_blank" rel="noreferrer noopener">
+                <img src="./assets/javascript-logo.png" width=17 >
+            </a>
         </td>
         <td>
-            <a href="https://www.codingame.com/training/easy/onboarding" target="_blank" rel="noreferrer noopener">✔️</a>
-            <img src="./assets/javascript-logo.png" width=15>
-            <a href="https://www.codingame.com/training/easy/the-descent" target="_blank" rel="noreferrer noopener">✔️</a>
-            <img src="./assets/javascript-logo.png" width=15>
+            <a href="https://www.codingame.com/training/easy/onboarding" target="_blank" rel="noreferrer noopener">
+                <img src="./assets/javascript-logo.png" width=17>
+            </a>
+            <a href="https://www.codingame.com/training/easy/the-descent" target="_blank" rel="noreferrer noopener">
+                <img src="./assets/javascript-logo.png" width=17>
+            </a>
         </td>
     </tr>
-    <tr>
+    <tr style="text-align: center; vertical-align: middle;">
         <td>03/15/2021</td>
         <td>
-            <a href="https://www.urionlinejudge.com.br/judge/pt/problems/view/1000" target="_blank" rel="noreferrer noopener">✔️</a>
-            <img src="./assets/python-logo.png" width=10>
+            <a href="https://www.urionlinejudge.com.br/judge/pt/problems/view/1000" target="_blank" rel="noreferrer noopener">
+                <img src="./assets/python-logo.png" width=12>
+            </a>
         </td>
         <td>
-            <a href="https://www.hackerrank.com/challenges/print-the-elements-of-a-linked-list/problem" target="_blank" rel="noreferrer noopener">✔️</a>
+            <a href="https://www.hackerrank.com/challenges/print-the-elements-of-a-linked-list/problem" target="_blank" rel="noreferrer noopener">
             <img src="./assets/C-logo.png" width=20>
+            </a>
         </td>
         <td>
-            <a href="https://www.codewars.com/kata/552c028c030765286c00007d/train/python" target="_blank" rel="noreferrer noopener">✔️</a>
-            <img src="./assets/python-logo.png" width=10>
+            <a href="https://www.codewars.com/kata/552c028c030765286c00007d/train/python" target="_blank" rel="noreferrer noopener">
+                <img src="./assets/python-logo.png" width=12>
+            </a>
         </td>
         <td>-</td>
         <td>
-            <a href="https://leetcode.com/problems/big-countries/" target="_blank" rel="noreferrer noopener">✔️</a>
-           <img src="./assets/sql-logo.png" width=25>
+            <a href="https://leetcode.com/problems/big-countries/" target="_blank" rel="noreferrer noopener">
+                <img src="./assets/sql-logo.png" width=25>
+            </a>
         </td>
         <td>
-            <a href="https://www.codingame.com/ide/puzzle/power-of-thor-episode-1" target="_blank" rel="noreferrer noopener">✔️</a>
-           <img src="./assets/javascript-logo.png" width=15>
+            <a href="https://www.codingame.com/ide/puzzle/power-of-thor-episode-1" target="_blank" rel="noreferrer noopener">
+                <img src="./assets/javascript-logo.png" width=17>
+            </a>
         </td>
     </tr>
 </table>
