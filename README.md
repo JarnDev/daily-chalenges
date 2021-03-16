@@ -1,9 +1,9 @@
 # Overview
 Repository created to showcase/track all challenges done on several online plataforms. And when possible upload the respective responses.
 
-- Access the website clicking the respective logo at the header
-- Access the challenge clicking on the checkmark, if link is available
-- The Icon at the checkmark's right, represent the language used to solve the problem.
+- Access the website clicking the respective logo at the header.
+- Access the challenge clicking on the language icon, if link is available.
+- The icon represent the langague used to solve the problem.
 
 <br>
 
