@@ -89,4 +89,17 @@ Repository created to showcase/track all challenges done on several online plata
             </a>
         </td>
     </tr>
+    <tr style="text-align: center; vertical-align: middle;">
+        <td>03/16/2021</td>
+        <td>-</td>
+        <td>-</td>
+        <td>
+            <a href="https://www.codewars.com/kata/555615a77ebc7c2c8a0000b8/train/python" target="_blank" rel="noreferrer noopener">
+                <img src="./assets/python-logo.png" width=12>
+            </a>
+        </td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+    </tr>
 </table>
