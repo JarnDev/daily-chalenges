@@ -102,4 +102,21 @@ Repository created to showcase/track all challenges done on several online plata
         <td>-</td>
         <td>-</td>
     </tr>
+    <tr style="text-align: center; vertical-align: middle;">
+        <td>03/17/2021</td>
+        <td>-</td>
+        <td>-</td>
+        <td>
+            <a href="https://www.codewars.com/kata/55c45be3b2079eccff00010f/train/python" target="_blank" rel="noreferrer noopener">
+                <img src="./assets/python-logo.png" width=12>
+            </a>
+        </td>
+        <td>-</td>
+        <td>
+            <a href="https://leetcode.com/problems/design-hashmap/" target="_blank" rel="noreferrer noopener">
+                <img src="./assets/javascript-logo.png" width=17>
+            </a>
+        </td>
+        <td>-</td>
+    </tr>
 </table>
