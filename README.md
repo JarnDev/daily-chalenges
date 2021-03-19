@@ -119,4 +119,17 @@ Repository created to showcase/track all challenges done on several online plata
         </td>
         <td>-</td>
     </tr>
+    <tr style="text-align: center; vertical-align: middle;">
+        <td>03/18/2021</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>
+            <a href="https://leetcode.com/problems/sum-of-square-numbers/" target="_blank" rel="noreferrer noopener">
+                <img src="./assets/javascript-logo.png" width=17>
+            </a>
+        </td>
+        <td>-</td>
+    </tr>
 </table>
