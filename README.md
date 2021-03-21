@@ -166,5 +166,18 @@ Repository created to showcase/track all challenges done on several online plata
         <td>-</td> <!-- LETCODE -->
         <td>-</td> <!-- CODINGAME -->
     </tr>
-    
+    <tr style="text-align: center; vertical-align: middle;">
+        <td>03/21/2021</td>
+        <td>-</td> <!-- URI -->
+        <td>-</td> <!-- HACKRANK -->
+        <td>-</td> <!-- CODEWAR -->
+        <td>-</td> <!-- EXERCISM -->
+        <td>-</td> <!-- LETCODE -->
+        <td>
+            <a href="https://www.codingame.com/ide/puzzle/temperatures" target="_blank" rel="noreferrer noopener">
+                <img src="./assets/javascript-logo.png" width=17>
+            </a>
+        </td> <!-- CODINGAME -->
+    </tr>
+
 </table>
