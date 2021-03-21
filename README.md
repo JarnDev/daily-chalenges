@@ -11,8 +11,8 @@ Repository created to showcase/track all challenges done on several online plata
 
 <br>
 <div style='display:flex; align-items: center; justifi-content: center;'>
-    <img src="./assets/python-logo.png" width=10> Python &nbsp;|&nbsp; 
-    <img src="./assets/javascript-logo.png" width=15> JavaScript &nbsp;|&nbsp;
+    <img src="./assets/python-logo.png" width=12> Python &nbsp;|&nbsp; 
+    <img src="./assets/javascript-logo.png" width=17> JavaScript &nbsp;|&nbsp;
     <img src="./assets/C-logo.png" width=20> C &nbsp;|&nbsp;
     <img src="./assets/c++-logo.png" width=15> C++ &nbsp;|&nbsp;
     <img src="./assets/sql-logo.png" width=25> SQL
@@ -136,11 +136,30 @@ Repository created to showcase/track all challenges done on several online plata
         <td>03/19/2021</td>
         <td>-</td> <!-- URI -->
         <td>-</td> <!-- HACKRANK -->
-        <td><a href="https://www.codewars.com/kata/513e08acc600c94f01000001/train/python" target="_blank" rel="noreferrer noopener">
+        <td>
+            <a href="https://www.codewars.com/kata/513e08acc600c94f01000001/train/python" target="_blank" rel="noreferrer noopener">
                 <img src="./assets/python-logo.png" width=12>
             </a></td> <!-- CODEWAR -->
         <td>-</td> <!-- EXERCISM -->
         <td>-</td> <!-- LETCODE -->
         <td>-</td> <!-- CODINGAME -->
     </tr>
+    <tr style="text-align: center; vertical-align: middle;">
+        <td>03/20/2021</td>
+        <td>
+            <a href="https://www.urionlinejudge.com.br/judge/pt/problems/view/1172" target="_blank" rel="noreferrer noopener">
+                <img src="./assets/python-logo.png" width=12>
+            </a>
+        </td> <!-- URI -->
+        <td>
+            <a href="https://www.hackerrank.com/challenges/js10-bitwise/problem" target="_blank" rel="noreferrer noopener">
+                <img src="./assets/javascript-logo.png" width=17>
+            </a>
+        </td> <!-- HACKRANK -->
+        <td></td> <!-- CODEWAR -->
+        <td>-</td> <!-- EXERCISM -->
+        <td>-</td> <!-- LETCODE -->
+        <td>-</td> <!-- CODINGAME -->
+    </tr>
+    
 </table>
