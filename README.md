@@ -139,7 +139,8 @@ Repository created to showcase/track all challenges done on several online plata
         <td>
             <a href="https://www.codewars.com/kata/513e08acc600c94f01000001/train/python" target="_blank" rel="noreferrer noopener">
                 <img src="./assets/python-logo.png" width=12>
-            </a></td> <!-- CODEWAR -->
+            </a>
+        </td> <!-- CODEWAR -->
         <td>-</td> <!-- EXERCISM -->
         <td>-</td> <!-- LETCODE -->
         <td>-</td> <!-- CODINGAME -->
@@ -156,7 +157,11 @@ Repository created to showcase/track all challenges done on several online plata
                 <img src="./assets/javascript-logo.png" width=17>
             </a>
         </td> <!-- HACKRANK -->
-        <td></td> <!-- CODEWAR -->
+        <td>
+            <a href="https://www.codewars.com/kata/52449b062fb80683ec000024/train/python" target="_blank" rel="noreferrer noopener">
+                <img src="./assets/python-logo.png" width=12>
+            </a>
+        </td> <!-- CODEWAR -->
         <td>-</td> <!-- EXERCISM -->
         <td>-</td> <!-- LETCODE -->
         <td>-</td> <!-- CODINGAME -->
