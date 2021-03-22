@@ -179,5 +179,33 @@ Repository created to showcase/track all challenges done on several online plata
             </a>
         </td> <!-- CODINGAME -->
     </tr>
-
+    <tr style="text-align: center; vertical-align: middle;">
+        <td>03/22/2021</td>
+        <td>
+            <a href="https://www.urionlinejudge.com.br/judge/pt/problems/view/1173" target="_blank" rel="noreferrer noopener">
+                <img src="./assets/python-logo.png" width=12>
+            </a>
+        </td> <!-- URI -->
+        <td> 
+            <a href="https://www.hackerrank.com/challenges/insert-a-node-at-the-tail-of-a-linked-list/problem" target="_blank" rel="noreferrer noopener">
+                <img src="./assets/javascript-logo.png" width=17>
+            </a>
+        </td> <!-- HACKRANK -->
+        <td>
+            <a href="https://www.codewars.com/kata/52774a314c2333f0a7000688/train/python" target="_blank" rel="noreferrer noopener">
+                <img src="./assets/python-logo.png" width=12>
+            </a>
+        </td> <!-- CODEWAR -->
+        <td>-</td> <!-- EXERCISM -->
+        <td>
+            <a href="https://leetcode.com/problems/random-flip-matrix/" target="_blank" rel="noreferrer noopener">
+                <img src="./assets/javascript-logo.png" width=17>
+            </a>
+        </td> <!-- LETCODE -->
+        <td>
+            <a href="https://www.codingame.com/ide/puzzle/mars-lander-episode-1" target="_blank" rel="noreferrer noopener">
+                <img src="./assets/javascript-logo.png" width=17>
+            </a>
+        </td> <!-- CODINGAME -->
+    </tr>
 </table>
