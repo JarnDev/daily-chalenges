@@ -221,4 +221,17 @@ Repository created to showcase/track all challenges done on several online plata
             </a>
         </td> <!-- CODINGAME -->
     </tr>
+    <tr style="text-align: center; vertical-align: middle;">
+        <td>03/24/2021</td>
+        <td>-</td> <!-- URI -->
+        <td>-</td> <!-- HACKRANK -->
+        <td>
+            <a href="https://www.codewars.com/kata/514a024011ea4fb54200004b/train/python" target="_blank" rel="noreferrer noopener">
+                <img src="./assets/python-logo.png" width=12>
+            </a>
+        </td> <!-- CODEWAR -->
+        <td>-</td> <!-- EXERCISM -->
+        <td>-</td> <!-- LETCODE -->
+        <td>-</td> <!-- CODINGAME -->
+    </tr>
 </table>
