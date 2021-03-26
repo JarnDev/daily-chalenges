@@ -235,7 +235,7 @@ Repository created to showcase/track all challenges done on several online plata
         <td>-</td> <!-- CODINGAME -->
     </tr>
     <tr style="text-align: center; vertical-align: middle;">
-        <td>03/24/2021</td>
+        <td>03/25/2021</td>
         <td>-</td> <!-- URI -->
         <td>-</td> <!-- HACKRANK -->
         <td>-</td> <!-- CODEWAR -->
