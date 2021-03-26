@@ -234,4 +234,17 @@ Repository created to showcase/track all challenges done on several online plata
         <td>-</td> <!-- LETCODE -->
         <td>-</td> <!-- CODINGAME -->
     </tr>
+    <tr style="text-align: center; vertical-align: middle;">
+        <td>03/24/2021</td>
+        <td>-</td> <!-- URI -->
+        <td>-</td> <!-- HACKRANK -->
+        <td>-</td> <!-- CODEWAR -->
+        <td>-</td> <!-- EXERCISM -->
+        <td>
+            <a href="https://leetcode.com/problems/two-sum/" target="_blank" rel="noreferrer noopener">
+                <img src="./assets/python-logo.png" width=12>
+            </a>
+        </td> <!-- LETCODE -->
+        <td>-</td> <!-- CODINGAME -->
+    </tr>
 </table>
