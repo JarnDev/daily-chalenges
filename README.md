@@ -247,4 +247,17 @@ Repository created to showcase/track all challenges done on several online plata
         </td> <!-- LETCODE -->
         <td>-</td> <!-- CODINGAME -->
     </tr>
+    <tr style="text-align: center; vertical-align: middle;">
+        <td>03/26/2021</td>
+        <td>-</td> <!-- URI -->
+        <td>-</td> <!-- HACKRANK -->
+        <td>
+            <a href="https://www.codewars.com/kata/534ea96ebb17181947000ada/train/c" target="_blank" rel="noreferrer noopener">
+            <img src="./assets/C-logo.png" width=20>
+            </a>
+        </td> <!-- CODEWAR -->
+        <td>-</td> <!-- EXERCISM -->
+        <td>-</td> <!-- LETCODE -->
+        <td>-</td> <!-- CODINGAME -->
+    </tr>
 </table>
